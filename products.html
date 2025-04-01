@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="assest/plugins/bootstrap5.3/css/bootstrap.min.css"
+    />
+    <!-- ICONS CSS -->
+    <link
+      rel="stylesheet"
+      href="assest/plugins/icon/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assest/plugins/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <!-- MDB CSS -->
+    <link rel="stylesheet" href="assest/plugins/mdb/css/mdb.rtl.min.css" />
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <link rel="stylesheet" href="assest/css/products.css" />
+    <link rel="stylesheet" href="assest/css/paging.css" />
+  </head>
+  <body id="customScrollbar">
+    <div class="col w-100">
+        <nav class="navbar navbar-expand-lg">
+            <div id="nav" class="container mb-2 mt-2">
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                  <img src="assest/images/logoblue.png" style="width: 33px;" alt="">
+                </a>
+                <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="dropdown">
+                            <li class="nav-item">
+                              <a class="nav-link dropdown-toggle d-flex align-items-center hidden-arrow hover-underline" data-mdb-dropdown-init href="#" id="categorymenu" role="button" data-mdb-toggle="dropdown" aria-expanded="false" href="products.html">محصولات</a>
+                              <ul class="dropdown-menu" aria-labelledby="categorymenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">کالای دیجیتال</a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                              <a class="dropdown-item" href="#">لپ‌تاب</a>
+                                              <ul class="dropdown-menu dropdown-submenu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">لپ‌تاب ایسوس</a>
+                                                </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">لپ‌تاب لنوو</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">مک بوک</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li>
+                                              <a class="dropdown-item" href="#">هدفون</a>
+                                              <ul class="dropdown-menu dropdown-submenu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">هدفون بی‌سیم</a>
+                                                </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">هدفون گیمینگ</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">ایرپاد</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">دوربین</a>
+                                                <ul class="dropdown-menu dropdown-submenu">
+                                                    <li>
+                                                      <a class="dropdown-item" href="#">دوربین کنون</a>
+                                                    </li>
+                                                    <li>
+                                                      <a class="dropdown-item" href="#">دوربین سونی</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">دوربین چاپ سریع</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">لنز دوربین</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">پایه دوربین</a>
+                                                    </li>
+                                                  </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">مودم</a>
+                                                <ul class="dropdown-menu dropdown-submenu">
+                                                    <li>
+                                                      <a class="dropdown-item" href="#">مودم ایرانسل</a>
+                                                    </li>
+                                                    <li>
+                                                      <a class="dropdown-item" href="#">مودم همراه اول</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">مودم جیبی</a>
+                                                    </li>
+                                                  </ul>
+                                            </li>
+                                          </ul>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#">موبایل</a>
+                                      <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                          <a class="dropdown-item" href="#">گوشی آیفون</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">گوشی سامسونگ</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">گوشی شیائومی</a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#">
+                                        آرایشی بهداشتی
+                                      </a>
+                                      <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                          <a class="dropdown-item" href="#">لوازم آرایشی</a>
+                                          <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                              <a class="dropdown-item" href="#">آرایش صورت</a>
+                                            </li>
+                                            <li>
+                                              <a class="dropdown-item" href="#">آرایش چشم</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">آرایش ابرو</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">آرایش لب</a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">مراقبت و زیبایی مو</a>
+                                          <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                              <a class="dropdown-item" href="#">نرم کننده مو</a>
+                                            </li>
+                                            <li>
+                                              <a class="dropdown-item" href="#">شامپو مو</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">مراقبت مو</a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">مراقبت پوست</a>
+                                          <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                              <a class="dropdown-item" href="#">ضد آفتاب</a>
+                                            </li>
+                                            <li>
+                                              <a class="dropdown-item" href="#">کرم مرطوب کننده</a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">پوشاک</a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                          <li>
+                                            <a class="dropdown-item" href="#">پوشاک زنانه</a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#">پوشاک مردانه</a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#">پوشاک بچگانه</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                </ul>
+                            </li>
+                          </div>
+                          <li class="nav-item">
+                              <a class="nav-link hover-underline" href="aboutus.html">درباره ما</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link hover-underline" href="contact.html">تماس با ما</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link hover-underline" href="question.html">سوالات متداول </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link hover-underline" href="blog.html">وبلاگ</a>
+                          </li>
+                      </ul>
+                      <div id="headerIcon" class="d-flex align-items-center justify-content-start">
+                          <a class="text-reset me-1" href="#">
+                            <i class=""><img src="assest/images/search.png" style="width: 20px;" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#myModal"></i>
+                            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <span class="input-group-text">
+                                    <input class="border-0 w-100" id="searchBar" type="text" placeholder="جست‌وجوی محصولات...">
+                                    <i class="bi bi-search"></i>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                          <a class="text-reset me-2" href="shoppingcart.html">
+                              <i class=""><img src="assest/images/bag.png" style="width: 20px;"></i>
+                              <span class="badge rounded-pill badge-notification countItem">0</span>
+                          </a>
+                          <a class="text-reset" href="#">
+                            <div class="dropdown">
+                              <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                <img src="assest/images/user.png" style="width: 20px;">
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="navbarDropdownMenuAvatar">
+                                  <li>
+                                      <a class="dropdown-item" href="#">حساب کاربری</a>
+                                  </li>
+                                  <li>
+                                      <a class="dropdown-item" href="#">تنظیمات</a>
+                                  </li>
+                                  <li>
+                                      <a class="dropdown-item" href="signin.html">خروج</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          </a>
+                      </div>
+                </div>
+            </div>
+          </nav>
+    </div>
+    
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-container">
+                <li class="breadcrumb-item"><a href="index.html">خانه</a></li>
+                <li class="breadcrumb-item active" aria-current="page">محصولات</li>
+            </ol>
+        </nav>
+    </div>
+    
+
+
+
+    <div class="container">
+        <div class="row">
+                    <nav class="navbar">
+                          <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navfilter" aria-controls="navfilter" aria-expanded="false" aria-label="Toggle navigation">
+                              <span style="font-size: 15px; color:#2D3250;">فیلتر بر اساس قیمت&nbsp;</span><i class="fas fa-filter" style="color: #2D3250;"></i>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navfilter">
+                            <div class="filter-section mt-3">
+                                <div class="filter-title mb-3">فیلتر براساس قیمت</div>
+                                <div class="filter-content">
+                                    <section class="range-slider mt-5">
+                                        <span class="full-range"></span>
+                                        <span class="incl-range"></span>
+                                        <input name="rangeOne" value="0" min="0" max="1000000" step="100000" type="range">
+                                        <input name="rangeTwo" value="1000000" min="0" max="1000000" step="100000" type="range">
+                                        <span class="output outputOne"></span>
+                                        <span class="output outputTwo"></span>
+                                    </section>
+                                    <button id="btnFilter" class="btn mt-3 mb-3">فیلتر</button>
+                                </div>
+                            </div>
+                    </nav>
+            <div class="col-12">
+                <div class="filter-box d-flex justify-content-between mt-3">
+                    <div class="filter-options">
+                        <button class="btnFilter active">جدیدترین</button>
+                        <button class="btnFilter">ارزان‌ترین</button>
+                        <button class="btnFilter">گران‌ترین</button>
+                        <button class="btnFilter">پرفروش‌ترین</button>
+                    </div>
+                    <span class="text-muted">نمایش ۱-۴۰ از ۳۵۴ نتیجه</span>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 col-6 custom-col">
+                        <div class="product">
+                            <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                              <span class="product-sale-label">ناموجود</span>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">لورم ایپسوم</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price">
+                                            <span class="mr-2 price">100.000</span>
+                                            <span class="price">تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                            <span><i class="fa fa-heart heart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                            <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                        </a>
+                                        <a href="single-product.html" class="d-flex justify-content-center align-items-center ">
+                                            <span><i class="bi bi-eye-fill"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 custom-col">
+                        <div class="product">
+                            <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product2.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">لورم ایپسوم</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price">
+                                            <span> 100.000</span>
+                                            <span> تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                            <span><i class="fa fa-heart heart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                            <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center ">
+                                            <span><i class="bi bi-eye-fill"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 custom-col">
+                      <div class="product">
+                          <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                            <span class="product-sale-label">ناموجود</span>
+                            <div class="overlay"></div>
+                          </a>
+                          <div class="text py-3 pb-4 px-3 text-center">
+                              <h3><a href="#">لورم ایپسوم</a></h3>
+                              <div class="d-flex">
+                                  <div class="pricing">
+                                      <p class="price">
+                                          <span class="mr-2 price">100.000</span>
+                                          <span class="price">تومان</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="bottom-area d-flex px-3">
+                                <div class="m-auto d-flex">
+                                    <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                        <span><i class="fa fa-heart heart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                        <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center ">
+                                        <span><i class="bi bi-eye-fill"></i></span>
+                                    </a>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-6 custom-col">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                          <span class="product-sale-label">ناموجود</span>
+                          <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3 text-center">
+                            <h3><a href="#">لورم ایپسوم</a></h3>
+                            <div class="d-flex">
+                                <div class="pricing">
+                                    <p class="price">
+                                        <span class="mr-2 price">100.000</span>
+                                        <span class="price">تومان</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bottom-area d-flex px-3">
+                                <div class="m-auto d-flex">
+                                    <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                        <span><i class="fa fa-heart heart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                        <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center ">
+                                        <span><i class="bi bi-eye-fill"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 custom-col">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                          <span class="product-sale-label">ناموجود</span>
+                          <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3 text-center">
+                            <h3><a href="#">لورم ایپسوم</a></h3>
+                            <div class="d-flex">
+                                <div class="pricing">
+                                    <p class="price">
+                                        <span class="mr-2 price">100.000</span>
+                                        <span class="price">تومان</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bottom-area d-flex px-3">
+                                <div class="m-auto d-flex">
+                                    <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                        <span><i class="fa fa-heart heart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                        <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center ">
+                                        <span><i class="bi bi-eye-fill"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 custom-col">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                          <span class="product-sale-label">ناموجود</span>
+                          <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3 text-center">
+                            <h3><a href="#">لورم ایپسوم</a></h3>
+                            <div class="d-flex">
+                                <div class="pricing">
+                                    <p class="price">
+                                        <span class="mr-2 price">100.000</span>
+                                        <span class="price">تومان</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bottom-area d-flex px-3">
+                                <div class="m-auto d-flex">
+                                    <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                        <span><i class="fa fa-heart heart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                        <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-center align-items-center ">
+                                        <span><i class="bi bi-eye-fill"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 custom-col">
+                  <div class="product">
+                      <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                        <span class="product-sale-label">ناموجود</span>
+                        <div class="overlay"></div>
+                      </a>
+                      <div class="text py-3 pb-4 px-3 text-center">
+                          <h3><a href="#">لورم ایپسوم</a></h3>
+                          <div class="d-flex">
+                              <div class="pricing">
+                                  <p class="price">
+                                      <span class="mr-2 price">100.000</span>
+                                      <span class="price">تومان</span>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="bottom-area d-flex px-3">
+                            <div class="m-auto d-flex">
+                                <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                    <span><i class="fa fa-heart heart"></i></span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                    <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-center align-items-center ">
+                                    <span><i class="bi bi-eye-fill"></i></span>
+                                </a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-6 custom-col">
+                <div class="product">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product1.jpg" alt="">
+                      <span class="product-sale-label">ناموجود</span>
+                      <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3 text-center">
+                        <h3><a href="#">لورم ایپسوم</a></h3>
+                        <div class="d-flex">
+                            <div class="pricing">
+                                <p class="price">
+                                    <span class="mr-2 price">100.000</span>
+                                    <span class="price">تومان</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bottom-area d-flex px-3">
+                            <div class="m-auto d-flex">
+                                <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                    <span><i class="fa fa-heart heart"></i></span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                    <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-center align-items-center ">
+                                    <span><i class="bi bi-eye-fill"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-6 custom-col">
+                        <div class="product">
+                            <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product3.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">لورم ایپسوم</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price">
+                                            <span> 100.000</span>
+                                            <span> تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                            <span><i class="fa fa-heart heart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                            <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center ">
+                                            <span><i class="bi bi-eye-fill"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 custom-col">
+                        <div class="product">
+                            <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product4.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">لورم ایپسوم</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price">
+                                            <span>100.000</span>
+                                            <span> تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                            <span><i class="fa fa-heart heart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                            <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center ">
+                                            <span><i class="bi bi-eye-fill"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4 col-6 custom-col">
+                        <div class="product">
+                            <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product5.jpg" alt="">
+                                <span class="status">20%</span>
+                                <div class="overlay"></div>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">لورم ایپسوم</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price">
+                                            <span class="mr-2 price">100.000</span>
+                                            <span class="price">تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                            <span><i class="fa fa-heart heart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                            <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center ">
+                                            <span><i class="bi bi-eye-fill"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 custom-col">
+                        <div class="product">
+                            <a href="#" class="img-prod"><img class="img-fluid" src="assest/images/product6.jpg" alt="">
+                                <div class="overlay"></div>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">لورم ایپسوم</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price">
+                                            <span>100.000</span>
+                                            <span> تومان</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="#" class="d-flex justify-content-center align-items-center text-center addToFav">
+                                            <span><i class="fa fa-heart heart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center mx-1 addToCartIcon">
+                                            <span><i class="fas fa-shopping-cart shoppingCart"></i></span>
+                                        </a>
+                                        <a href="#" class="d-flex justify-content-center align-items-center ">
+                                            <span><i class="bi bi-eye-fill"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="pagination-container d-flex justify-content-center mb-5">
+                    <div class="pagination">
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                        <span class="pagination-inner">
+                          <a href="#">1</a>
+                          <a class="pagination-active" href="#">2</a>
+                          <a href="#">3</a>
+                        </span>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer id="footer" class="footerr">
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a href="#" class="footer-logo"><img src="assest/images/logo.png"></a>
+            </div>
+            <div class="col-sm">
+              <h3>دسته‌بندی</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">موبایل</a></li>
+                <li><a href="#">مد و پوشاک</a></li>
+                <li><a href="#">آرایشی و بهداشتی</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>دسترسی سریع</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">فروشگاه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>راهنمای خرید</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">نحوه ثبت سفارش</a></li>
+                <li><a href="#">رویه ارسال سفارش</a></li>
+                <li><a href="#">شیوه پرداخت</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>ارتباط با ما</h3>
+              <ul class="list-unstyled social">
+                <li><a href="#"><i class="bi bi-telegram"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assest/plugins/jq3/jquery-3.7.1.js"></script>
+    <script src="assest/plugins/bootstrap5.3/js/bootstrap.min.js"></script>
+    <script src="assest/plugins/mdb/js/mdb.umd.min.js"></script>
+    <script src="assest/plugins/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+    <script src="assest/js/filter.js"></script>
+    <script src="assest/js/add.js"></script>
+    <script src="assest/js/script.js"></script>
+  </body>
+</html>
