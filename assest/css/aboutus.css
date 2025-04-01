@@ -1,0 +1,57 @@
+.social-icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateY(-50%);
+
+}
+.social-icon li { 
+    margin: 10px 0; 
+}
+.social-icon li a{
+    color: #fff;
+    background-color: #2D3250;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.social-icon li a:hover{
+    color: #2D3250;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bottom-area {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.bottom-area:hover {
+    opacity: 1;
+}
+
+#team {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+}
+
+#team:hover {
+    -webkit-filter: brightness(100%);
+}
+
+.aboutUs {
+    text-align: justify;
+}
+

@@ -1,0 +1,90 @@
+.vertical-tab{
+    display: table;
+    width: 100%;
+}
+.vertical-tab .nav-tabs{
+    display: table-cell;
+    width: 28%;
+}
+.vertical-tab .nav-tabs li a{
+    color: #555;
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 13px 10px 10px;
+    margin: 0 9px 9px 0;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0.1s;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: #2D3250;
+    background: #fff;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+.vertical-tab .nav-tabs li a:before,
+.vertical-tab .nav-tabs li a:after{
+    content: '';
+    background: #2D3250;
+    height: 100%;
+    width: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:after{
+    opacity: 0;
+    left: auto;
+    right: 100px;
+    transition: all 0.3s ease-in 0.2s;
+}
+.vertical-tab .nav-tabs li a:hover:before,
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li.active a:hover:before{
+    width: 50%;
+    opacity: 0;
+}
+.vertical-tab .nav-tabs li a:hover:after,
+.vertical-tab .nav-tabs li.active a:after,
+.vertical-tab .nav-tabs li.active a:hover:after{
+    opacity: 1;
+    right: 0
+}
+.vertical-tab .tab-content{
+    color: #555;
+    width: 1%;
+    background: #fff;
+    font-size: 14px;
+    padding: 20px 20px 10px;
+    margin-top: 10px;
+    border-right: 3px solid #2D3250;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: table-cell;
+    position: relative;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 479px){
+    .vertical-tab .nav-tabs{
+        width: 100%;
+        display: block;
+        border: none;
+    }
+    .vertical-tab .nav-tabs li a{ margin: 0 0 10px; }
+    .vertical-tab .tab-content{
+        padding: 25px 20px;
+        display: block;
+    }
+}
+

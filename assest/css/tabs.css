@@ -1,0 +1,95 @@
+.tab .nav-tabs{
+    padding: 0 5px;
+    margin: 0;
+    border: none;
+}   
+.tab .nav-tabs li a{
+    color: #fff;
+    background: #424769;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 10px 0 0;
+    border-radius: 6px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li a:hover,
+.tab .nav-tabs li.active a:hover{
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+.tab .nav-tabs li a:before,
+.tab .nav-tabs li a:after{
+    content: '';
+    border-radius: 6px;
+    background-color: #f9b17a;
+    height: 100%;
+    width: 100%;
+    transform-origin: left center;
+    transform: scaleX(0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+}
+.tab .nav-tabs li a:after{
+    background-color: #f9b17a;
+    transform-origin: right center;
+}
+.tab .nav-tabs li a:hover:before,
+.tab .nav-tabs li.active a:before,
+.tab .nav-tabs li.active a:hover:before,
+.tab .nav-tabs li a:hover:after,
+.tab .nav-tabs li.active a:after,
+.tab .nav-tabs li.active a:hover:after{
+    opacity: 0.7;
+    transform: scaleX(1);
+}
+.tab .tab-content{
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    line-height: 25px;
+}
+@media only screen and (max-width: 479px){
+    .tab .nav-tabs{
+        padding: 0;
+        margin: 0 0 5px;
+    }
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+    }
+    .tab .nav-tabs li a{ margin: 0 0 10px; }
+}
+
+.tab-pane p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #424769;
+}
+
+.tab-pane span {
+    font-size: 14px;
+    color: #424769;
+}
+
+#addComment {
+    background-color: #F7F7F7;
+}
+#addComment::placeholder {
+    font-size: 14px;
+}
+
+.submitComment {
+    background-color: #424769;
+    color: #fff;
+}

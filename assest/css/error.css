@@ -1,0 +1,43 @@
+#containerError {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #error {
+      color: rgba(45, 50, 80, 1);
+      font-size: 120px;
+      font-weight: bold;
+      letter-spacing: 20px;
+      cursor: pointer;
+      animation: glitch 1s linear infinite;
+  }
+  
+  #textError {
+      color: rgba(45, 50, 80, 1);
+      font-size: 24px;
+  }
+  
+#markImg {
+  width: 28px;
+}
+
+#aError {
+  font-family: 'vazirThin';
+  font-size: 17px;
+  color: rgba(142, 150, 155, 1);
+}
+
+  @keyframes glitch{
+      0%,60%{
+        transform: translate(2px,0) skew(2deg);
+        color: rgba(45, 50, 80, 1);
+      }
+      50%,70%{
+        transform: translate(-2px,0) skew(3deg);
+        color: rgb(66, 73, 111);
+      }
+      80%{
+        transform: translate(0,0) skew(4deg);
+        color: rgb(122, 131, 181);
+      }
+  }  
